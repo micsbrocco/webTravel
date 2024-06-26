@@ -1,0 +1,31 @@
+/* DashboardHeader.css */
+
+.dashboard-header {
+    background-color: #000f38;
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .header-content h2 {
+    margin: 0;
+  }
+  
+  .header-content button {
+    background-color: transparent;
+    color: #e2d4d4;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .header-content button:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,91 @@
+/* Login.css */
+
+.login-container {
+    margin: 80px auto;
+    max-width: 400px; /* Tamaño medio para el contenedor */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    color: #000f38;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .login-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000f38;
+  }
+  
+  .login-container input {
+    display: block;
+    width: calc(100% - 30px); /* Ajusta el ancho para dejar espacio para el padding */
+    background-color: #ebecfe;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    margin: 5px auto;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .login-container input:focus {
+    box-shadow: 0 0 5px rgba(0, 15, 56, 0.5);
+  }
+  
+  .login-container button {
+    padding: 10px 20px;
+    background-color: #000f38;
+    color: #eff2f8;
+    border: 2px solid #4e68b1;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .login-container button:hover {
+    background-color: #3f60bb;
+    color: #fff;
+  }
+  
+  .login-container .register-btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    border: 2px solid #000f38;
+    color: #000f38;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .login-container .register-btn:hover {
+    background-color: #000f38;
+    color: #eff2f8;
+  }
+  
+  .login-container p {
+    margin-top: 15px;
+    color: #000f38;
+  }
+  
+  .login-container p button {
+    background: none;
+    border: none;
+    color: #3f60bb;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .login-container p button:hover {
+    text-decoration: none;
+  }
+  
