@@ -1,91 +1,90 @@
 /* Login.css */
 
+.login-title {
+  text-align: center;
+  align-items: center;
+  margin-top: 30px; /* Ajusta el margen superior del título */
+  font-size: 50px;
+}
+
 .login-container {
-    margin: 80px auto;
-    max-width: 400px; /* Tamaño medio para el contenedor */
-    padding: 20px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-  }
-  
-  .login-container h2 {
-    color: #000f38;
-    font-weight: 500;
-    font-size: 25px;
-    margin-bottom: 20px;
-  }
-  
-  .login-container label {
-    display: block;
-    margin-bottom: 5px;
-    color: #000f38;
-  }
-  
-  .login-container input {
-    display: block;
-    width: calc(100% - 30px); /* Ajusta el ancho para dejar espacio para el padding */
-    background-color: #ebecfe;
-    padding: 15px;
-    border: 0;
-    outline: 0;
-    margin: 5px auto;
-    border-radius: 5px;
-    transition: box-shadow 0.3s ease;
-  }
-  
-  .login-container input:focus {
-    box-shadow: 0 0 5px rgba(0, 15, 56, 0.5);
-  }
-  
-  .login-container button {
-    padding: 10px 20px;
-    background-color: #000f38;
-    color: #eff2f8;
-    border: 2px solid #4e68b1;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-    margin-top: 10px;
-  }
-  
-  .login-container button:hover {
-    background-color: #3f60bb;
-    color: #fff;
-  }
-  
-  .login-container .register-btn {
-    padding: 10px 20px;
-    background-color: transparent;
-    border: 2px solid #000f38;
-    color: #000f38;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
-    margin-top: 10px;
-  }
-  
-  .login-container .register-btn:hover {
-    background-color: #000f38;
-    color: #eff2f8;
-  }
-  
-  .login-container p {
-    margin-top: 15px;
-    color: #000f38;
-  }
-  
-  .login-container p button {
-    background: none;
-    border: none;
-    color: #3f60bb;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-  
-  .login-container p button:hover {
-    text-decoration: none;
-  }
-  
+  margin-top: 80px; /* Ajusta el margen superior del contenedor */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 180px;
+  max-width: 500px; /* Tamaño medio para el contenedor */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-image: url('../../assets/fondologin.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.login-container h2 {
+  color: #fff; /* Añade el color blanco para que coincida con el texto del título de Register */
+  font-weight: bold; /* Ajusta el peso de la fuente */
+  font-size: 35px; /* Ajusta el tamaño de la fuente */
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  color: #fff; /* Añade el color blanco para que coincida con el texto de las etiquetas de Register */
+  margin-bottom: 8px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.form-group input {
+  display: block;
+  width: calc(100% - 30px); /* Ajusta el ancho para dejar espacio para el padding */
+  background-color: #ebecfe;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin: 5px auto;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  box-shadow: 0 0 5px rgba(0, 15, 56, 0.5);
+}
+
+.btn-regis,
+.register-btn,
+.go-back-btn {
+  width: calc(100% - 30px);
+  padding: 15px 20px; /* Ajusta el padding para hacer los botones más grandes */
+  background-color: #dce4f8;
+  color: #000f38;
+  border: 2px solid transparent; /* Mantén el borde transparente por defecto */
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-regis:hover,
+.register-btn:hover,
+.go-back-btn:hover {
+  background-color: #000f38;
+  color: #dce4f8;
+  border-color: #16317e; /* Agrega un borde al hacer hover */
+}
+
+.btn-regis {
+  margin-bottom: 10px; /* Espacio entre los botones */
+}
+
+.register-btn {
+  border: 2px solid #000f38; /* Agrega un borde al botón de registrarse */
+}

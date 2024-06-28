@@ -5,6 +5,7 @@ import User from '../models/User.js';
 
 const router = express.Router();
 
+// Ruta de registro de usuarios
 router.post('/register', async (req, res) => {
   const { username, password, email } = req.body;
 
@@ -18,6 +19,7 @@ router.post('/register', async (req, res) => {
   }
 });
 
+// Ruta de login de usuarios
 router.post('/login', async (req, res) => {
   const { username, password } = req.body;
 
@@ -37,7 +39,8 @@ router.post('/login', async (req, res) => {
     }
 
     console.log('Login exitoso');
-    return res.status(200).json({ message: 'Login exitoso', user: { username: user.username, email: user.email } });
+    // Incluye el _id del usuario en la respuesta
+    return res.status(200).json({ message: 'Login exitoso', user: { _id: user._id, username: user.username, email: user.email } });
   } catch (error) {
     console.error('Error en el servidor al iniciar sesión:', error);
     return res.status(500).json({ message: 'Error en el servidor al iniciar sesión' });
@@ -45,3 +48,4 @@ router.post('/login', async (req, res) => {
 });
 
 export default router;
+

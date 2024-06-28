@@ -1,7 +1,10 @@
+// server.js
+
 import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import authRoutes from './routes/auth.js';
+import favoritoRoutes from './routes/favoritos.js'; // Importa las rutas de favoritos
 
 const app = express();
 
@@ -17,7 +20,9 @@ mongoose.connect(MONGO_URI, {
 }).then(() => console.log('MongoDB Connected'))
   .catch(err => console.error(err));
 
+// Rutas
 app.use('/api/auth', authRoutes);
+app.use('/api/favoritos', favoritoRoutes); // Usa las rutas de favoritos
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

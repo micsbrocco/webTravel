@@ -1,0 +1,57 @@
+/* Destino.css */
+
+.contenedor-favoritos {
+  display: none; /* Inicialmente oculto */
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px; /* Espacio arriba de los favoritos */
+}
+
+.contenedor-favoritos.mostrando {
+  display: block; /* Mostrar cuando tiene la clase 'mostrando' */
+}
+
+.lista-favoritos {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.favorito-item {
+  margin-bottom: 20px;
+}
+
+.favoritos-section {
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+}
+
+.favoritos-section h2 {
+  margin-bottom: 10px;
+}
+
+.favoritos-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.favoritos-item {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.favoritos-item h3 {
+  margin-top: 0;
+}
+
+.favoritos-item p {
+  margin-bottom: 0;
+}

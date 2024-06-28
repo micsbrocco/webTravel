@@ -2,12 +2,21 @@
 
 import mongoose from 'mongoose';
 
-const UserSchema = new mongoose.Schema({
-  username: { type: String, required: true, unique: true },
-  password: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
+// Define el esquema para los favoritos
+const favoritoSchema = new mongoose.Schema({
+  titulo: { type: String, required: true },
+  descripcion: { type: String, required: true },
+  imagen: { type: String, required: true }
 });
 
-const User = mongoose.model('User', UserSchema);
+// Define el esquema para el usuario
+const usuarioSchema = new mongoose.Schema({
+  username: { type: String, required: true },
+  password: { type: String, required: true },
+  email: { type: String, required: true },
+  favoritos: [favoritoSchema] // Usa el esquema de favoritos en un array
+});
 
-export default User;
+const Usuario = mongoose.model('Usuario', usuarioSchema);
+
+export default Usuario;

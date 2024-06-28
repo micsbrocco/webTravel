@@ -1,0 +1,54 @@
+.tarjeta-destino {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%; /* Utilizamos un ancho del 100% inicialmente */
+  max-width: 300px; /* Ancho máximo para cada tarjeta */
+  flex-basis: calc(25% - 20px); /* Ancho base de cada tarjeta (25% - margen) */
+  margin: 0 10px 20px; /* Margen horizontal y vertical */
+}
+
+.tarjeta-destino img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0; /* Esquinas redondeadas solo arriba */
+  display: block;
+  transition: filter 0.3s ease;
+}
+
+.tarjeta-destino:hover img {
+  filter: brightness(0.7); /* Oscurecer la imagen al pasar el mouse */
+}
+
+.tarjeta-destino .contenido {
+  padding: 20px;
+}
+
+.tarjeta-destino h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.tarjeta-destino p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.tarjeta-destino button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tarjeta-destino button:hover {
+  background-color: #0056b3;
+}

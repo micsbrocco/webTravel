@@ -1,0 +1,33 @@
+.header-hoteles {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos a los extremos */
+    align-items: center;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .header-hoteles h1 {
+    margin-right: auto; /* Empuja el título hacia la izquierda */
+  }
+  
+  .favoritos-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 1rem; /* Margen derecho para separar del botón 'Volver' */
+  }
+  
+  .volver-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  

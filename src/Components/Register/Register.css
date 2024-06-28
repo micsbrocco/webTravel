@@ -1,85 +1,98 @@
 /* Register.css */
 
+.register-title {
+  text-align: center;
+  align-items: center;
+  margin-top: 30px; /* Ajusta el margen superior del título */
+  font-size: 50px;
+}
+
 .register-container {
-    margin: 80px auto;
-    max-width: 400px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .register-container h2 {
-    color: #000f38;
-    font-weight: 500;
-    font-size: 25px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    color: #000f38;
-    margin-bottom: 8px;
-  }
-  
-  .form-group input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
-  }
-  
-  .form-group input:focus {
-    outline: none;
-    border-color: #3f60bb;
-  }
-  
-  button[type="submit"],
-  button[type="button"] {
-    width: 100%;
-    padding: 12px;
-    background-color: #000f38;
-    color: #eff2f8;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  button[type="submit"]:hover,
-  button[type="button"]:hover {
-    background-color: #3f60bb;
-  }
-  
-  .button-group {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
-  }
-  
-  .button-group button {
-    width: calc(50% - 5px); /* Espacio igual entre los dos botones */
-  }
-  
-  .button-group button:first-child {
-    margin-right: 10px;
-  }
-  
-  @media (max-width: 500px) {
-    .button-group {
-      flex-direction: column;
-    }
-  
-    .button-group button {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-  }
-  
+  margin-top: 80px; /* Ajusta el margen superior del contenedor */
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 125px;
+  max-width: 500px; /* Tamaño medio para el contenedor */
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-image: url('../../assets/fondologin.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.register-container h2 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  color: #fff;
+  margin-bottom: 8px;
+  margin-left: 15px;
+  text-align: left;
+}
+
+.form-group input {
+  width: calc(100% - 30px);
+  background-color: #ebecfe;
+  padding: 15px;
+  border: 0;
+  outline: 0;
+  margin: 5px auto;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  box-shadow: 0 0 5px rgba(0, 15, 56, 0.5);
+}
+
+button[type="submit"],
+button[type="button"],
+.go-back-btn {
+  width: calc(100% - 30px);
+  padding: 10px 20px;
+  font-size: 13px;
+  background-color: #dce4f8;
+  color: #000f38;
+  border: 2px solid transparent; /* Mantén el borde transparente por defecto */
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button[type="submit"]:hover,
+button[type="button"]:hover,
+.go-back-btn:hover {
+  background-color: #000f38;
+  color: #fff;
+  border-color: #16317e; /* Agrega un borde al hacer hover */
+}
+
+.register-container .register-btn .go-back-btn {
+  background-color: transparent;
+  border-color: #000f38;
+  color: #000f38;
+}
+
+.register-container .register-btn:hover {
+  background-color: #000f38;
+  color: #eff2f8;
+}
+
+.register-container button,
+.register-container .register-btn {
+  margin-top: 15px;
+}

@@ -1,0 +1,68 @@
+.tarjetas-paquetes {
+    display: flex; /* Mostrar las tarjetas en línea */
+    flex-wrap: wrap; /* Permitir que se envuelvan si no hay suficiente espacio */
+    justify-content: space-around; /* Distribuir las tarjetas alrededor del espacio disponible */
+    margin: 0 -10px; /* Compensar los márgenes negativos */
+  }
+  
+  .tarjeta-paquetes {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(25% - 20px); /* Ancho de cada tarjeta */
+    flex: 1 0 300px; /* Ajustar tamaño y flexibilidad */
+    margin: 0 10px 20px; /* Margen horizontal y vertical */
+    display: flex; /* Alinear contenido en columna */
+    flex-direction: column; /* Alinear contenido en columna */
+  }
+  
+  .tarjeta-paquetes img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0; /* Esquinas redondeadas solo arriba */
+    display: block;
+    transition: filter 0.3s ease;
+  }
+  
+  .tarjeta-paquetes:hover img {
+    filter: brightness(0.7); /* Oscurecer la imagen al pasar el mouse */
+  }
+  
+  .tarjeta-paquetes .contenido {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    padding: 20px;
+  }
+  
+  .tarjeta-paquetes h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .tarjeta-paquetes p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .tarjeta-paquetes .agregar-favorito {
+    margin-top: auto; /* Empuja el botón al final de la tarjeta */
+  }
+  
+  .tarjeta-paquetes button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self:self-end;
+  }
+  
+  .tarjeta-paquetes button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,41 @@
+/* src/Components/Destino/HeaderDestinos.css */
+.header-destinos {
+    width: 100%;
+    background-color: #000f38;
+    color: #fff;
+    padding: 10px 20px; /* Aumenta el padding para espacio a la izquierda y derecha */
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header-destinos h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #fff;
+    flex-grow: 1; /* Asegura que el título ocupe todo el espacio disponible a la izquierda */
+  }
+  
+  .header-destinos .volver-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+    background-color: #dce4f8;
+    color: #000f38;
+    border: 2px solid transparent; /* Mantén el borde transparente por defecto */
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    margin-left: 20px; /* Espacio entre el botón y el título */
+  }
+  
+  .header-destinos .volver-btn:hover {
+    background-color: #072780;
+    color: #fff;
+    border-color: #16317e; /* Agrega un borde al hacer hover */
+  }
+  

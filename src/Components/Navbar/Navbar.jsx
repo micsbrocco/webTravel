@@ -1,10 +1,15 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
-import { Link as RouterLink } from 'react-router-dom'; 
+import { Link as RouterLink } from 'react-router-dom';
 import './Navbar.css';
 import logo from '../../assets/icono.png';
 
-const Navbar = () => {
+const Navbar = ({ isLoggedIn, setIsLoggedIn }) => {
+  const logout = () => {
+    setIsLoggedIn(false); 
+    localStorage.removeItem('user');// Actualiza el estado de sesión a false
+  };
+
   return (
     <nav className='container'>
       <img src={logo} alt="Logo" className='logo' />
@@ -40,9 +45,15 @@ const Navbar = () => {
           </ScrollLink>
         </li>
         <li>
-          <RouterLink to='/login'>
-            <button className='btn'>Iniciar Sesión</button>
-          </RouterLink>
+          {isLoggedIn ? (
+            <button className='btn' onClick={logout}>
+              Cerrar Sesión
+            </button>
+          ) : (
+            <RouterLink to='/login'>
+              <button className='btn'>Iniciar Sesión</button>
+            </RouterLink>
+          )}
         </li>
       </ul>
     </nav>

@@ -1,0 +1,19 @@
+/* Estilos para la lista de favoritos */
+
+.contenedor-favoritos {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.lista-favoritos {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-favoritos li {
+  margin-bottom: 10px;
+}
